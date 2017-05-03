@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>panels</title><!--es para mostrar una forma de llamar la atencion del usuario-->
+
+	<meta name="viewport" content="width=device-width, inicial-scaled=1"> <!-- viewport se ve de forma vertical y content maneja el ancho -->
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+<div class="container">
+	<button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#demo">Collapse</button>
+	<div id="demo" class="collapse">
+		¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+	</div>
+</div>
+
+<div class="panel-group">
+   <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+        	<a data-toggle="collapse" href="#collapse1">Collapse panel</a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse" id="collapse1">
+      	  <div class="panel-body">Panel body</div>
+      	  <div class="panel-footer">Panel footer</div>
+      </div>	
+   </div>	
+</div>
+
+<div class="panel-group" id="accordion">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> collapse group 2</a>
+			</h4>	
+		</div>
+	</div>
+	<div id="collapse2" class="panel-collapse collapse in">
+		<div class="panel-body">
+			¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+
+		</div>
+	</div>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> collapse group 3</a>
+			</h4>	
+		</div>
+	</div>
+	<div id="collapse3" class="panel-collapse collapse in">
+		<div class="panel-body">
+			¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+		</div>
+	</div>
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> collapse group 4</a>
+			</h4>	
+		</div>
+	</div>
+	<div id="collapse4" class="panel-collapse collapse in">
+		<div class="panel-body">
+			¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+		</div>
+	</div>
+</div>
+</body>
+</html>

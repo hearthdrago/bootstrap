@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Tabs and pills</title><!--es para mostrar una forma de llamar la atencion del usuario-->
+
+	<meta name="viewport" content="width=device-width, inicial-scaled=1"> <!-- viewport se ve de forma vertical y content maneja el ancho -->
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+   <div class="container">
+   	<h3>Inline List</h3>
+   	<ul class="list-inline">
+   		<li><a href="#">Home</a></li>
+   		<li><a href="#">Menu 1</a></li>
+   		<li><a href="#">Menu 2</a></li>
+   		<li><a href="#">Menu 3</a></li>
+   	</ul>
+   </div>
+
+   <div class="container">
+   	<ul class="nav nav-tabs">
+   		<li class="active"><a href="#">Home</a></li>
+   		
+   		<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1<span class="caret">
+   		      </span>
+   		   </a>
+   		   <ul class="dropdown-menu">
+   		   	<li><a href="#">Submenu 1-1</a></li>
+   		   	<li><a href="#">Submenu 1-2</a></li>
+   		   	<li><a href="#">Submenu 1-3</a></li>
+   		   	<li><a href="#">Submenu 1-4</a></li>
+   		   </ul>
+   		</li><!-- sera desplegable-->
+   		
+   		<li><a href="#">Menu 2</a></li>
+   		<li><a href="#">Menu 3</a></li>
+   	</ul>
+   </div>
+
+   <div class="container">
+   	<ul class="nav nav-pills nav-stacked">
+   		<li class="active"><a href="#">Home</a></li>
+   		<li><a href="#">Menu 1</a></li>
+   		<li><a href="#">Menu 2</a></li>
+   		<li><a href="#">Menu 3</a></li>
+   	</ul>
+   </div>
+
+      <div class="container">
+   	<ul class="nav nav-pills nav-justified">
+   		<li class="active"><a href="#">Home</a></li>
+   		<li><a href="#">Menu 1</a></li>
+   		<li><a href="#">Menu 2</a></li>
+   		<li><a href="#">Menu 3</a></li>
+   	</ul>
+   </div>
+
+         <div class="container">
+   	<ul class="nav nav-tabs">
+   		<li><a data-toggle="tab" href="home">Home</a></li>
+   		<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+   		<li><a data-toggle="tab" href="#Menu2">Menu 2</a></li>
+   	</ul>
+
+   	<div class="tab-content">
+   		<div id="home" class="tab-pane fade in active">
+   			<h3>Home</h3>
+   			<p>
+   				¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+
+   			</p>
+   		</div>
+   		
+   		<div id="menu1" class="tab-pane fade">
+   			<h3>menu1</h3>
+   			<p>
+   				¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+   			</p>
+   		</div>
+
+   		<div id="menu2" class="tab-pane fade">
+   			<h3>menu2</h3>
+   			<p>
+   				¿QUE PERMITE VTP?
+El Protocolo de troncal VLAN (VTP) reduce la administración en una red conmutada. Cuando configure una VLAN nueva en un servidor VTP, se distribuye la VLAN por todos los switches del dominio. Esto reduce la necesidad de configurar la misma VLAN en todas partes. El VTP es un protocolo patentado de Cisco disponible en la mayoría de los productos de la serie Catalyst de Cisco.
+   			</p>
+   		</div>
+   	</div>
+   </div>
+</body>
+</html>
